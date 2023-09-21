@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Internship in omeroid"
+title: "インターンシップ in omeroid"
 date: 2023-09-15 17:30
 description: 2023年9月4日から14日にインターンシップに行ってきました！！ 初めてのインターンシップ、多くのことが学べました！
 tags:
