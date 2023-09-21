@@ -22,12 +22,8 @@ share:
   email: true
 
 social:
-  github: streetturtle
-  stackoverflow: ''
-  linkedin:
-  instagram: ''
-  lastfm: ''
-  rss: feed.xml
+  github: sotarokashiuchi
+  twitter: '@sotarokashiuchi'
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:
