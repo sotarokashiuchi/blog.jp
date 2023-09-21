@@ -14,6 +14,7 @@ title: About
 - [WIP][自作Cコンパイラ](https://github.com/sotarokashiuchi/C_Compiler_for_C)
 - [WRO2020 Expert Junior](https://github.com/sotarokashiuchi/WRO2020_Expert_Junior)
 
+<br>
 # 参加歴
 
 | 年月 | 内容 |
@@ -29,15 +30,18 @@ title: About
 | 2023/09 | 『omeroidインターンシップ』参加 |
 
 
+<br>
 # 受賞
 
 |年月|内容|
 |---|---|
-|2019年8月|「WRO Japan 2019 奈良予選会レギュラーカテゴリーミドル競技中学生部門」準優勝|
-|2020年12月|「WRO Japan 2020 決勝大会 on the WEB レギュラーカテゴリー ジュニア部門」優勝|
-|2021年5月|「FIRST Robotics Competition(FRC)2020-2021 Rookie Game Changer Award」受賞|
-|2022年11月|「ゆめくじら プログラミング・コンテスト」自由部門特別賞、一般部門準優勝|
+|2019/08|「WRO Japan 2019 奈良予選会レギュラーカテゴリーミドル競技中学生部門」準優勝|
+|2020/12|「WRO Japan 2020 決勝大会 on the WEB レギュラーカテゴリー ジュニア部門」優勝|
+|2021/05|「FIRST Robotics Competition(FRC)2020-2021 Rookie Game Changer Award」受賞|
+|2022/11|「ゆめくじら プログラミング・コンテスト」自由部門特別賞、一般部門準優勝|
 
+
+<br>
 # 資格
 
 |年月|内容|
