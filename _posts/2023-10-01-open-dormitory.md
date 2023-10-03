@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2023/10/01 日記"
-date: 2023-10/01 22:00
+date: 2023-10-01 22:00
 description: 開寮日...
 tags:
  - 日記
