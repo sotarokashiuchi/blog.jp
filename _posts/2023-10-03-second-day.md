@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "2023/10/04 日記"
-date: 2023-10-04 23:00
-description: 開寮の最後の日。
+title: "2023/10/03 日記"
+date: 2023-10-03 23:00
+description: 夏休み明け、授業開始...
 tags:
  - 日記
 ---
