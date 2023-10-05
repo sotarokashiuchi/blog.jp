@@ -26,7 +26,7 @@ social:
   twitter: '@sotarokashiuchi'
 
 # Google Analytics key, leave blank to ignore
-google_analytics_key: G-VK9J0RR2N5
+google_analytics_key: 'G-VK9J0RR2N5'
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
 
