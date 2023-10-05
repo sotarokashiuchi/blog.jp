@@ -53,3 +53,9 @@ exclude: ['README.md', 'LICENSE']
 
 # time zone
 timezone: Asia/Tokyo
+
+# sitemap
+plugins:
+  - jekyll-sitemap
+
+
