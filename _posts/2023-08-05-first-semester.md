@@ -1,9 +1,10 @@
 ---
 layout: post
-title: ""
+title: "2023年度前期 活動まとめ"
 date: 2023-08-05 23:00
-description: 
+description: 2023年度前期の活動をまとめ、振り返りました。
 tags: 
+- 活動まとめ
 ---
 
 # 前期を振り返り
