@@ -2,7 +2,7 @@
 layout: post
 title: "2023/10/15 日記"
 date: 2023-10-15 22:30
-description: 
+description: 学校が始まって2週間が経過。自作Cコンパイラは簡易的な構造体まで実装完了
 tags:
  - 日記
 ---

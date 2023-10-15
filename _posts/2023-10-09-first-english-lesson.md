@@ -2,7 +2,7 @@
 layout: post
 title: "2023/10/09 日記"
 date: 2023-10-09 23:00
-description: 
+description: BNF記法と短絡評価
 tags:
  - 日記
 ---

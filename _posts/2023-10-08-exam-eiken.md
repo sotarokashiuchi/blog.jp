@@ -2,7 +2,7 @@
 layout: post
 title: "2023/10/08 日記"
 date: 2023-10-08 23:00
-description: 
+description: 英検準2級爆死
 tags:
  - 日記
 ---
