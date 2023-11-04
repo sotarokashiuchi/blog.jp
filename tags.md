@@ -11,7 +11,11 @@ title: Tags
 			{% for tag in site.tags %}
 			<li>
                 <a href="{{ '/tag/' | append:tag[0] | relative_url }}">{{ tag[0] }}</a>
-                <p>{{tag.discription}}</p>
+                {% for page in site.page %}
+                    {% if page.layout == "tag_index" %}
+                        <p>{{page.discription}}</p>
+                    {% endif %}
+                {% endfor %}
             </li>
 			{% endfor %}
 		</ul>
