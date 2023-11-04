@@ -11,7 +11,8 @@ title: Tags
 			{% for tag in site.tags %}
 			<li>
                 <a href="{{ '/tag/' | append:tag[0] | relative_url }}">{{ tag[0] }}</a>
-                {% for page in site.page %}
+                {% for page in site.pages %}
+                    {{page.content}}
                     {% if page.layout == "tag_index" %}
                         <p>{{page.discription}}</p>
                     {% endif %}
