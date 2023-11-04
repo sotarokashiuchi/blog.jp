@@ -12,7 +12,6 @@ title: Tags
 			<li>
                 <a href="{{ '/tag/' | append:tag[0] | relative_url }}">{{ tag[0] }}</a>
                 {% for page in site.pages %}
-                    {{page.content}}
                     {% if page.layout == "tag_index" %}
                         <p>{{page.discription}}</p>
                     {% endif %}
