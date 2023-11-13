@@ -10,7 +10,7 @@ tags:
 ## 自作Cコンパイラ
 負の数を扱えるようにすることで、ついに2kmccを自作コンパイラでコンパイルすることができました！！よく頑張った！！まじでよく頑張った！！  
 今週の主な変更点を説明します。符号拡張、ゼロ拡張を行えるようにしました。1byte, 4byte, 8byteのサイズをレジスタが指すメモリアドレスから取り出し、8byteレジスタ(今回はrax)に代入する時、以下のようにすると1byteのときには1byte以外の上位7byteには前の不定な値が格納されています。4byteのときには上位4byteには0で埋め尽く(ゼロ拡張)されています。これでは負の数を扱えません。また文字列を扱う際に不便なので、変更します。
-```asm
+```nasm
 # 1byte
 mov al , [rax]
 # 4byte
@@ -19,7 +19,7 @@ mov eax, [rax]
 mov rax, [rax]
 ```
 以下のように変更することで、対応できます。movzx(Move byte to quadword, zero-extension)はゼロ拡張を行い、movsxd(Move doubleword to quadword with signextension)は符号拡張を行います。1byteではゼロ拡張を使用します。この理由は1byteを扱うときはchar型のときだからです。また4byteの時、符号拡張するのは、負の数を扱うようにするためです。
-```asm
+```nasm
 # 1byte
 mov al , [rax] -> movzx rax, BYTE PTR [rax]
 # 4byte
