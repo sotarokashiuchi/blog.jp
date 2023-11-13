@@ -29,7 +29,9 @@ mov rax, [rax]
 ```
 
 以下の動画は私が作ったテストケースと、2kmccをコンパイルしている様子です。
-![make debug & 2kmcc](/blog.jp/assets/items/2023-11/2023-11-07-compiler-make-test.webm)
+<video controls autoplay muted loop playsinline src="/blog.jp/assets/items/2023-11/2023-11-07-compiler-make-test.webm"></video>
+
+直近の課題として、フラグレジスタのCarryとOverflowの違いがよくわからなかったので、その違いを調べたいです。そして最終目標は、セルフホストを実現させることです。頑張ろー！！
 
 ## 英検
 11月13日、英検の二次試験がありました。高専祭とかぶっており、忙しかったです。ようやく一段落したという感じです。(英検に関する記事はこちら -> [英検準2級への挑戦](blog.jp/2023/10/eiken-grade-pre-2))
