@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "第一回ゆめくじら勉強会"
-date: 2023-09-16 23:00
+date: 2023-12-07 23:00
 description: 「共同開発環境を構築しよう」という勉強会を開催しました。
 tags:
  - 勉強会
@@ -14,15 +14,15 @@ tags:
 
 受講者はとても熱心に聞いてくれ、良かったです。途中クローンできないというトラブルが発生しましたが、なんとか最後まで講義を終えることができました。下の写真は講義の様子と、講義中に使用したハンズオンのGitのグラフです。
 
-![slide](../assets/items/2023-12/2023-12-06-slide.png)
-![picture](../assets/items/2023-12/2023-12-06-picture.png)
+![slide](/blog.jp/assets/items/2023-12/2023-12-06-slide.png)
+![picture](/blog.jp/assets/items/2023-12/2023-12-06-picture.png)
 
 ## 受講者のアンケート結果
 アンケートを実施しました。結果は以下のとおりです。満足度が高かったのは良かったです。しかし理解度がやや低いのと、講義の難易度が高いと答えた学生が多く改善の余地があると思いました。アンケートありがとうございました。
-![ghraph1](../assets/items/2023-12/2023-12-06-graph1.png)
-![ghraph1](../assets/items/2023-12/2023-12-06-graph2.png
-![ghraph1](../assets/items/2023-12/2023-12-06-graph3.png)
-![ghraph1](../assets/items/2023-12/2023-12-06-graph4.png)
+![ghraph1](/blog.jp/assets/items/2023-12/2023-12-06-graph1.png)
+![ghraph1](/blog.jp/assets/items/2023-12/2023-12-06-graph2.png)
+![ghraph1](/blog.jp/assets/items/2023-12/2023-12-06-graph3.png)
+![ghraph1](/blog.jp/assets/items/2023-12/2023-12-06-graph4.png)
 
 ## 改善点
 - 休憩を入れる(4時間ぶっ通し×2はまずかった)
