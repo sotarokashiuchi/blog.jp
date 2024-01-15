@@ -73,7 +73,7 @@ F:スリープさせる
 ```
 
 キーボードが動作している時の動画です。動くとなおさらにかっこいい！！
-![Seekbar Control Keyboard](/blog.jp/assets/items/2024-01/2024-01-14-seekbar-control-keyboar.mp4)
+<video controls autoplay muted loop playsinline src="/blog.jp/assets/items/2024-01/2024-01-14-seekbar-control-keyboar.mp4"></video>
 
 1月13日、前日に一つのキーボードの動作確認ができたため、もう一つキーボードを半田し、組み立てました。わざわざ２つ作る理由は、最終的に分割キーボードを作成するため、その動作確認のためです。TRRSケーブルを接続し、簡易的な分割キーボードを組み立てた写真が以下です。
 
