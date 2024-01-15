@@ -1,0 +1,99 @@
+---
+layout: post
+title: "2024/01/14 日記"
+date: 2024-01-14 23:00
+description: 「Seekbar Control Keyboard」を組み立て、動作確認を行いました。
+tags:
+ - 日記
+---
+
+## Seekbar Control Keyboard
+1月10日、学校の先生に頼み、半田コテと、半田を貸していただきました。キーボードに使用する部品はすでに揃っていたため、半田を行いました。途中ダイオードを潰してしまったり、Pro Microのピンの付ける向きを間違えたりしてしまいました。またスイットを取り外しできるようにホットスワップ方式を採用していたため、ソケットを半田する必要がありました。部品が小さく非常に難しかったし、熱かったです。部品がこんなに熱くなっていて壊れていないかとても不安になりました。  
+なんとか全て組み立てることができました。実際に組み立ててみるとかっこいい！！
+
+1月11日、学校の先生に頼み、レーザー加工機を貸していただきました。レーザー加工機を使用し、キーボードのプレート(ケース)を作成しようとしました。  
+しかし、使用した素材がPPというものだったため、断面が溶けてしまい、思った通りの仕上がりにはなりませんでした。さらに、M2のネジ穴など円形の部分が正しく認識されず、穴を開けることができませんでした。  
+次回はアクリル板を使用してみたいと思います。また、レーザー加工機のソフトウェアを改良して円を正確に認識できるようにしたいです。
+
+1月12日、キーボードにファームウェアを書き込みました。「qmk_firmware」というオープンソースのファームウェアを書き込みました。  
+独自のキーボードのため、作成するのは設定など難しいのかなと思っていたのですが、キーボード名やMCU(マイコンの種類)などを答えるだけで、大枠のコードを自動で生成してくれました。(以下のようなプロンプトに答えるだけです)特に[こちらのサイト](https://qiita.com/mizuhof/items/c2f9eb173b21593d969e)を参考にしました。大枠は自動で生成されるので、実際のキーの構成や、キーが押されたときにどのようなキーコードを送信するかをプログラムして、コンパイルし、キーボードに書き込んであげます。
+
+```shell
+➜  ~ qmk new-keyboard -u sotarokashiuchi
+Ψ Generating a new QMK keyboard directory
+
+Name Your Keyboard Project
+For more infomation, see:
+https://docs.qmk.fm/#/hardware_keyboard_guidelines?id=naming-your-keyboardproject
+
+Keyboard Name? seekbar_control_keyboard
+
+Pick Base Layout
+As a starting point, one of the common layouts can be used to bootstrap the process
+
+Default Layout?
+        59. tkl_nofrow_iso
+        60. none of the above
+Please enter your choice:  [60] 60
+
+What Powers Your Project
+For more infomation, see:
+https://docs.qmk.fm/#/compatible_microcontrollers
+
+MCU?
+        13. promicro
+        14. promicro_rp2040
+Please enter your choice:  [28] 13
+Ψ Created a new keyboard called seekbar_control_keyboard.
+Ψ To start working on things, `cd` into keyboards/seekbar_control_keyboard,
+Ψ or open the directory in your preferred text editor.
+Ψ And build with qmk compile -kb seekbar_control_keyboard -km default.
+```
+
+[こちら](https://docs.qmk.fm/#/ja/feature_tap_dance)のタップダンスという機能を使用することで、ダブルクッリックのときだけ別の動作をさせることができたりします。実はドキュメントはサンプルコードが間違っており、始めはエラーを出力していました。データの型が間違っていることに気づき修正を行いました。そうすると無事タップダンスに対応させれました。
+
+キーボードにはエンコーダーも搭載しているので、その設定も行いました。特に問題はなく動作しました。
+レイヤーの機能も実装しました。レイヤーとはCtrlキーなどのようなある特別なキーを押している時だけ、別のキーコードを送信するというものです。
+
+いろいろ試し、ひとまず完成したのが以下のようなキーボードです。
+```
+/*
+ * ┌───┬───┬───┐
+ * │ A │ B │ C │
+ * ├───┼───┼───┤
+ * │ D │ E │ F │
+ * └───┴───┴───┘
+ */
+A:少し戻る。ダブルクリックで前の曲へ
+B:一時停止・再生
+C:少し進む。ダブルクリックで次の曲へ
+D:回転させ、音量の調節
+E:特になし。ファンクションキーとして設定する予定
+F:スリープさせる
+```
+
+キーボードが動作している時の動画です。動くとなおさらにかっこいい！！
+![Seekbar Control Keyboard](../assets/items/2024-01/2024-01-14-seekbar-control-keyboar.mp4)
+
+1月13日、前日に一つのキーボードの動作確認ができたため、もう一つキーボードを半田し、組み立てました。わざわざ２つ作る理由は、最終的に分割キーボードを作成するため、その動作確認のためです。TRRSケーブルを接続し、簡易的な分割キーボードを組み立てた写真が以下です。
+
+![分割](../assets/items/2024-01/2024-01-14-split.jpg)
+
+1月13日、前日qmk_firmwareのドキュメントのサンプルコードが動作しないというバグを発見したので、それを修正し、PRしてみることにしました。修正自体は3時間ぐらいで終わり、PRリクエストを作りました。英語でのPRリクエストは非常に緊張しました。そしてついに本家GitHubのqmk_firmwareにPRを送りました。実は私は初めてOSSに対してPRリクエストをするのでとてもウキウキしました。マージされることを楽しみにしています。
+
+1月14日、私自身はキーキャップを購入していなかったので、友達のキーボードのキーキャップを貸してもらい、私に合うキーボードの軸を考えました。写真を貼っておきます。私は赤軸、茶軸、シルバー軸、バナナ軸が印象に残っています。バナナ軸が一番合いそうだったのですが、重く、長時間使うとしんどいかなと思いました。なので、現時点で一番の候補は、赤軸です。
+
+![キーキャップ付き](../assets/items/2024-01/2024-01-14-keycap1.jpg)
+![キーキャップ付き](../assets/items/2024-01/2024-01-14-keycap2.jpg)
+
+### 今後の予定
+- 分割キーボードの動作確認を行う
+- アクリル板を購入し、プレートを完成させる
+- Windowsでは認識しないキーコードがあったため、改良する
+- ロータリーエンコーダにレイヤを割り当て、レイヤごとに動作を変える
+- qmk_firmwareのコードを呼んで見る(C言語で書かれているみたい)
+    - GitHubのサブモジュールの管理方法を学ぶ
+    - ドキュメントの生成保法を知る
+- 自分用の分割キーボードを設計・作成する
+
+
