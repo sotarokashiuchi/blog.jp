@@ -5,6 +5,7 @@
 <html lang="en">
 
 <head>
+    {% include google-tag-manager-head.html %}
     <meta charset="UTF-8">
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
     <meta name="theme-color" content="#222222"/>
@@ -22,6 +23,7 @@
 
 <body>
 
+{% include google-tag-manager-body.html %}
 {% include yandex-metrica.html %}
 
 <script type="text/javascript">
