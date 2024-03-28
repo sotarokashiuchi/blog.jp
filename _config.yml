@@ -25,11 +25,6 @@ social:
   github: sotarokashiuchi
   twitter: '@sotarokashiuchi'
 
-# Google Analytics key, leave blank to ignore
-google_analytics_key: 'G-VK9J0RR2N5'
-# Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
-yandex_metrica:
-
 google_tag_manager_key: 'GTM-56CSJ7L5'
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
