@@ -2,6 +2,7 @@
 title = "Zellijの便利な機能"
 date = 2023-09-28T16:20:00+09:00
 tags = ['技術']
+aliases = ["/2023/09/zellij/"]
 +++
 
 

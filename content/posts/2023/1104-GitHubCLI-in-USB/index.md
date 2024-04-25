@@ -2,6 +2,7 @@
 title = "開発環境(Git, GitHub)をUSBに入れて持ち運ぶ"
 date = 2023-11-04T16:23:00+09:00
 tags = ['技術']
+aliases = ["/2023/11/GitHubCLI-in-USB/"]
 +++
 
 ## 概要

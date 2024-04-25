@@ -2,6 +2,7 @@
 title = "インターンシップ in omeroid"
 date = 2023-09-15T17:30:00+09:00
 tags = ['体験記']
+aliases = ["/2023/09/internship-in-omeroid/"]
 +++
 
 ## 概要
